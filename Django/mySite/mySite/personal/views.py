@@ -4,4 +4,12 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<h2>Hello World</h2>")
+    return render(request, "index.html")
+
+
+def cv(request):
+    return render(request, "cv.html")
+
+
+def coding(request):
+    return render(request, "coding.html")
